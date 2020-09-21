@@ -1,6 +1,6 @@
 # Blog Project
 
-A project of a Blog site developed using Flask.
+A project of a Blog developed using Flask.
 
 ## Get it started 
 
