@@ -10,3 +10,6 @@ To start the website, enter the following command:
 python app.py
 ```
 
+## License
+
+[MIT](LICENSE)
