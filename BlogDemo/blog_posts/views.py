@@ -1,8 +1,8 @@
 from flask import Blueprint, render_template, url_for, redirect, flash, request
 from flask_login import current_user, login_required
-from pupcomp import db
-from pupcomp.models import BlogPost
-from pupcomp.blog_posts.forms import BlogPostForm
+from BlogDemo import db
+from BlogDemo.models import BlogPost
+from BlogDemo.blog_posts.forms import BlogPostForm
 from werkzeug.exceptions import abort
 
 blog_posts = Blueprint('blog_posts', __name__)

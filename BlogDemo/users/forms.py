@@ -5,7 +5,7 @@ from wtforms import ValidationError
 from flask_wtf.file import FileField, FileAllowed
 
 from flask_login import current_user
-from pupcomp.models import User
+from BlogDemo.models import User
 
 class RegistrationForm(FlaskForm):
 

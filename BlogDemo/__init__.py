@@ -22,14 +22,14 @@ login_manager.init_app(app)
 login_manager.login_view='users.login'
 
 
-from pupcomp.core.views import core
+from BlogDemo.core.views import core
 app.register_blueprint(core)
   
-from pupcomp.error_pages.handlers import error_pages
+from BlogDemo.error_pages.handlers import error_pages
 app.register_blueprint(error_pages)
 
-from pupcomp.users.views import users
+from BlogDemo.users.views import users
 app.register_blueprint(users)
 
-from pupcomp.blog_posts.views import blog_posts
+from BlogDemo.blog_posts.views import blog_posts
 app.register_blueprint(blog_posts)

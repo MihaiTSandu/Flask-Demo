@@ -1,9 +1,9 @@
 from flask import redirect, url_for, render_template, flash, request, Blueprint
 from flask_login import login_user, current_user, logout_user, login_required
-from pupcomp import db
-from pupcomp.models import User, BlogPost
-from pupcomp.users.forms import RegistrationForm, LoginForm, UpdateUserForm
-from pupcomp.users.picture_handler import add_profile_pic
+from BlogDemo import db
+from BlogDemo.models import User, BlogPost
+from BlogDemo.users.forms import RegistrationForm, LoginForm, UpdateUserForm
+from BlogDemo.users.picture_handler import add_profile_pic
 
 users = Blueprint('users', __name__)
 
