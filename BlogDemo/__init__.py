@@ -1,9 +1,9 @@
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
-from flask_login import LoginManager
 import os
 
+from flask import Flask
+from flask_login import LoginManager
+from flask_migrate import Migrate
+from flask_sqlalchemy import SQLAlchemy
 
 app= Flask(__name__)
 
@@ -23,13 +23,17 @@ login_manager.login_view='users.login'
 
 
 from BlogDemo.core.views import core
+
 app.register_blueprint(core)
   
 from BlogDemo.error_pages.handlers import error_pages
+
 app.register_blueprint(error_pages)
 
 from BlogDemo.users.views import users
+
 app.register_blueprint(users)
 
 from BlogDemo.blog_posts.views import blog_posts
+
 app.register_blueprint(blog_posts)
