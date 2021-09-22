@@ -9,6 +9,9 @@ To start the website, enter the following command:
 ```sh 
 python app.py
 ```
+On heroku, you can login using the following:
+Email: guest@guest.com
+Password: 12345678
 
 ## License
 
